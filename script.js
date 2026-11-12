@@ -406,7 +406,7 @@
   function renderDialogue(era) {
     const opening = era.openingDialogue;
     const chosen = dialogueAnsweredThisVisit ? selectedDialogue(era) : null;
-    return `<div class="dialogue-identity"><h2>${esc(era.character.name)}</h2><span class="role">${esc(era.character.role)}</span></div><div id="dialogue-response"><p class="dialogue-text" id="dialogue-question">${esc(opening.question)}</p></div><div class="dialogue-choices" data-count="${opening.choices.length}" role="group" aria-labelledby="dialogue-question">${opening.choices.map((choice) => `<button class="dialogue-choice ${chosen?.id === choice.id ? 'current' : ''}" data-action="dialogue" data-id="${choice.id}" aria-pressed="${chosen?.id === choice.id}"><span>${esc(choice.label)}</span><span class="choice-arrow" aria-hidden="true">${chosen?.id === choice.id ? '✓' : '↗'}</span></button>`).join('')}</div>`;
+    return `<div class="dialogue-identity"><h2>${esc(era.character.name)}</h2><span class="role">${esc(era.character.role)}</span></div><div id="dialogue-response"><p class="dialogue-text" id="dialogue-question">${esc(opening.question)}</p></div><div class="dialogue-choices" data-count="${opening.choices.length}" role="group" aria-labelledby="dialogue-question">${opening.choices.map((choice) => `<button class="dialogue-choice ${chosen?.id === choice.id ? 'current' : ''}" data-action="dialogue" data-id="${choice.id}" aria-pressed="${chosen?.id === choice.id}"><span>${esc(choice.label)}</span><span class="choice-arrow" aria-hidden="true">${icon(chosen?.id === choice.id ? 'check' : 'arrow')}</span></button>`).join('')}</div>`;
   }
   function renderTaskDialogue(era) {
     if (!dialogueAnsweredThisVisit) return '';
@@ -1149,6 +1149,8 @@
       response.hidden = false;
       openTask(true, { includeDialogueReply: true });
       $('#task-panel').scrollTop = 0;
+      $('#task-section').scrollTop = 0;
+      $('#conversation').scrollTop = 0;
       announce(`${era.character.name}: ${choice.response} Задание: ${era.task.title}.`);
       return;
     }

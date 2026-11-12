@@ -98,6 +98,7 @@
       taskHTML,
       taskInstruction,
     } = cfg;
+    const panelContext = `<div class="sheet-context"><span class="sheet-era-index">${pad(index + 1)} / 07 · ${esc(era.date)}</span><span class="sheet-era-name">${esc(shortName)}</span></div>`;
     return `<section class="scene-page immersive-scene" data-era="${era.id}" data-panel="${mode}" data-optional-search="${optionalSearch()}" data-scene-variant="${layout.variant}" aria-label="${esc(era.date)} — ${esc(era.title)}">
       <div class="scene-world" id="scene-world" tabindex="0" aria-label="Локация целиком. Нажмите на предмет или золотую метку, чтобы прочитать описание.">
         <svg id="scene-canvas" class="scene-canvas" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${layout.width} ${layout.height}" preserveAspectRatio="none" aria-hidden="true">
@@ -122,8 +123,8 @@
       <div class="scene-location"><span class="eyebrow">${pad(index + 1)} / 07 · ${esc(era.date)}</span><h1>${esc(era.title)}</h1><p>${esc(shortName)}</p><div class="image-note">${era.id === 'future' ? 'Художественное будущее' : 'Художественная реконструкция'}</div></div>
       <div class="scene-tools"><button class="scene-pill" data-action="scene-list" aria-expanded="false">${icon('pin')}<span><span id="scene-items-label">${optionalSearch() ? 'Артефакты' : 'Предметы'}</span> <b id="scene-found-count">${foundCount()}/${objects().length}</b></span></button><button class="scene-icon-control" data-action="fact" data-id="${era.id}" aria-label="История эпохи и источники" title="История эпохи и источники">${icon('info')}</button></div>
 
-      <section id="dialogue-panel" class="scene-sheet dialogue-sheet" aria-label="Разговор с персонажем"><div class="sheet-controls"><button class="sheet-close icon-button" data-action="look" aria-label="Свернуть диалог и осмотреться">${icon('close')}</button></div><div class="scene-conversation" id="conversation">${dialogueHTML}</div></section>
-      <section id="task-panel" class="scene-sheet task-sheet" aria-labelledby="task-title" hidden><div class="sheet-controls"><button class="sheet-close icon-button" data-action="look" aria-label="Свернуть задание и осмотреться">${icon('close')}</button></div><div class="task-section" id="task-section" tabindex="-1"><div id="task-dialogue" class="task-dialogue" role="group" aria-labelledby="task-speaker" aria-describedby="task-npc-response" tabindex="-1" ${taskDialogueHTML ? '' : 'hidden'}>${taskDialogueHTML || ''}</div><div class="task-heading"><span class="eyebrow">${cfg.complete ? 'СЛЕД ПАМЯТИ СОХРАНЁН' : 'ВАШЕ ЗАДАНИЕ'}</span><h2 id="task-title">${esc(era.task.title)}</h2><p>${esc(taskInstruction)}</p><p class="fine-print">${esc(era.task.note)}</p></div><div class="task-body" id="task-body">${taskHTML}</div></div></section>
+      <section id="dialogue-panel" class="scene-sheet dialogue-sheet" aria-label="Разговор с персонажем"><div class="sheet-controls">${panelContext}<button class="sheet-close icon-button" data-action="look" aria-label="Свернуть диалог и осмотреться">${icon('close')}</button></div><div class="scene-conversation sheet-body" id="conversation">${dialogueHTML}</div></section>
+      <section id="task-panel" class="scene-sheet task-sheet" aria-labelledby="task-title" hidden><div class="sheet-controls">${panelContext}<button class="sheet-close icon-button" data-action="look" aria-label="Свернуть задание и осмотреться">${icon('close')}</button></div><div class="task-section sheet-body" id="task-section" tabindex="-1"><div id="task-dialogue" class="task-dialogue" role="group" aria-labelledby="task-speaker" aria-describedby="task-npc-response" tabindex="-1" ${taskDialogueHTML ? '' : 'hidden'}>${taskDialogueHTML || ''}</div><div class="task-heading"><span class="eyebrow">${cfg.complete ? 'СЛЕД ПАМЯТИ СОХРАНЁН' : 'ВАШЕ ЗАДАНИЕ'}</span><h2 id="task-title">${esc(era.task.title)}</h2><p>${esc(taskInstruction)}</p><p class="fine-print">${esc(era.task.note)}</p></div><div class="task-body" id="task-body">${taskHTML}</div></div></section>
       <section id="object-panel" class="scene-sheet object-sheet" aria-labelledby="object-title" hidden><button class="sheet-close icon-button" data-action="look" aria-label="Закрыть описание предмета">${icon('close')}</button><div id="object-content"></div></section>
       <div id="scene-object-tray" class="scene-object-tray" hidden><div class="tray-heading"><span>Найдите предмет в локации</span><button class="text-button" data-action="scene-hints" aria-pressed="false">Показать контуры</button></div><div class="scene-object-links">${objects()
         .map(
@@ -313,15 +314,23 @@
       hintsButton.setAttribute('aria-pressed', String(hints));
     }
     positionObjectPanel();
-    if (mode === 'talk') requestMeasure();
+    // Each mode can change the header, tools, actor and lower-control layout.
+    requestMeasure();
   }
   function setMode(next, { focus = false } = {}) {
     if (!['look', 'talk', 'task', 'object'].includes(next)) return;
     if (next === 'task' && !cfg?.dialogueAnswered) next = 'talk';
     if (next === 'task' && cfg) cfg.taskStarted = true;
+    const enteringPanel = mode !== next && ['talk', 'task'].includes(next);
     mode = next;
     listOpen = false;
     updatePanels();
+    if (enteringPanel) {
+      const panel = $(next === 'talk' ? '#dialogue-panel' : '#task-panel');
+      const body = $(next === 'talk' ? '#conversation' : '#task-section');
+      if (panel) panel.scrollTop = 0;
+      if (body) body.scrollTop = 0;
+    }
     if (focus) {
       const target =
         next === 'task'
@@ -454,12 +463,47 @@
       '--scene-viewport-bottom-inset',
       `${Math.max(0, height - visibleBottom)}px`,
     );
+    // Clearance is measured from the visible bottom. CSS adds the viewport inset
+    // once, so browser bars or a raised visual viewport cannot double the gap.
+    const fallbackClearance = width > height ? 73 : 80;
+    let bottomClearance = fallbackClearance;
+    if (compact && ['talk', 'task'].includes(mode)) {
+      const dock = $('.scene-dock')?.getBoundingClientRect();
+      const archive = document.getElementById('archive-button')?.getBoundingClientRect();
+      const coins = document.getElementById('archive-coins')?.getBoundingClientRect();
+      const obstacles = [archive, coins];
+      if (dock?.width >= dock?.height) obstacles.push(dock);
+      for (const box of obstacles) {
+        if (
+          !box?.width ||
+          !box.height ||
+          box.bottom <= Math.max(rect.top, viewportTop) ||
+          box.top >= rect.top + visibleBottom ||
+          box.right <= rect.left ||
+          box.left >= rect.left + width
+        )
+          continue;
+        bottomClearance = Math.max(bottomClearance, visibleBottom - (box.top - rect.top) + 12);
+      }
+    }
+    root.style.setProperty('--scene-bottom-clearance', `${bottomClearance}px`);
+    root.style.setProperty(
+      '--scene-panel-max-height',
+      `${Math.max(0, visibleBottom - safeTop - bottomClearance)}px`,
+    );
     layout = sceneLayout(width, height);
     camera = CAMERA.create(width, height, layout.width, layout.height);
     updateCamera();
-    const dialogueHeight =
-      $('#dialogue-panel').getBoundingClientRect().height || Math.min(330, height * 0.41);
+    const dialogue = $('#dialogue-panel').getBoundingClientRect();
+    const dialogueHeight = dialogue.height || Math.min(330, height * 0.41);
     root.style.setProperty('--dialogue-space', `${dialogueHeight}px`);
+    const dialogueTop =
+      dialogue.width && dialogue.height
+        ? dialogue.top - rect.top
+        : visibleBottom - bottomClearance - dialogueHeight;
+    const actorHeight = Math.max(0, dialogueTop - safeTop - 8);
+    root.style.setProperty('--scene-actor-available-height', `${actorHeight}px`);
+    root.dataset.actorSpace = actorHeight < 72 ? 'small' : 'available';
   }
   function requestMeasure() {
     if (resizeFrame !== null) cancelAnimationFrame(resizeFrame);
@@ -502,6 +546,10 @@
       if (title) observer.observe(title);
       const archive = document.getElementById('archive-button');
       if (archive) observer.observe(archive);
+      const coins = document.getElementById('archive-coins');
+      if (coins) observer.observe(coins);
+      const dock = $('.scene-dock');
+      if (dock) observer.observe(dock);
     }
     let drag = null;
     world.addEventListener('pointerdown', (event) => {
