@@ -6318,7 +6318,7 @@ body[data-view='scene'] #archive-button #archive-count {
   }
 }
 
-/* В компактной сцене прокручивается только содержимое, отдельно от заголовка и крестика. */
+/* В компактной сцене крестик стоит рядом с именем, без отдельной верхней плашки. */
 .immersive-scene .sheet-context {
   display: none;
 }
@@ -6348,36 +6348,19 @@ body[data-view='scene'] #archive-button #archive-count {
           var(--scene-bottom-clearance, var(--dialogue-bottom))
       )
     );
-    overflow: hidden;
     overflow-x: hidden;
-    overflow-y: hidden;
+    overflow-y: auto;
     isolation: isolate;
   }
   .immersive-scene .dialogue-sheet:not([hidden]),
   .immersive-scene .task-sheet:not([hidden]) {
-    display: flex;
-    flex-direction: column;
+    display: block;
   }
   .immersive-scene .sheet-controls {
-    display: flex;
-    position: static;
-    flex: 0 0 auto;
-    align-items: center;
-    justify-content: space-between;
-    gap: 12px;
-    min-height: 56px;
-    padding: 6px 12px;
-    border-bottom: 1px solid var(--line);
-    background: #1b1d22;
+    display: contents;
   }
   .immersive-scene .sheet-context {
-    display: flex;
-    flex: 1 1 auto;
-    flex-direction: column;
-    gap: 2px;
-    min-width: 0;
-    text-align: left;
-    overflow-wrap: anywhere;
+    display: none;
   }
   .immersive-scene .sheet-era-index {
     font-size: 10px;
@@ -6393,8 +6376,9 @@ body[data-view='scene'] #archive-button #archive-count {
     color: var(--light-gold);
   }
   .immersive-scene .sheet-controls .sheet-close.icon-button {
-    position: static;
-    flex: 0 0 44px;
+    position: absolute;
+    top: 8px;
+    right: 10px;
     margin: 0;
     width: 44px;
     height: 44px;
@@ -6405,8 +6389,8 @@ body[data-view='scene'] #archive-button #archive-count {
     flex: 1 1 auto;
     min-width: 0;
     min-height: 0;
-    overflow-x: hidden;
-    overflow-y: auto;
+    overflow-x: visible;
+    overflow-y: visible;
     overscroll-behavior: contain;
     touch-action: pan-y;
     scroll-behavior: auto;
@@ -6427,8 +6411,11 @@ body[data-view='scene'] #archive-button #archive-count {
     padding: 14px 16px 22px;
   }
   .immersive-scene .sheet-body .dialogue-identity {
-    padding-right: 0;
+    padding-right: 48px;
     overflow-wrap: anywhere;
+  }
+  .immersive-scene #task-dialogue[hidden] + .task-heading {
+    padding-right: 48px;
   }
   .immersive-scene .sheet-body .task-dialogue {
     margin: 0;
