@@ -1,0 +1,250 @@
+[
+  {
+    "filename": "era-factory.webp",
+    "prompt": "Use case: historical-scene. Asset type: a photorealistic cinematic 16:9 background image for a premium historical browser narrative game, NOT a website screenshot and no UI. Saint Petersburg Vasilievsky Island, 1869, a red-brick industrial courtyard adapted from earlier warehouses, tall arched windows, existing weathered masonry, a discreet workshop entrance, handcart and crates, a few distant nineteenth-century workmen as atmosphere. Deep perspective toward an archway, cobblestones slightly wet, late-afternoon muted golden light and fine atmospheric dust. Authentic tactile brick, bronze and timber textures. High-end arthouse film still, subtle grain, graphite charcoal shadows, warm ivory highlights, muted ochre gold, restrained burgundy. Rich image detail across the frame, center/right architecture more illuminated, left side somewhat darker for a title overlay. Realistic humans small in scale. No modern objects, no weapons, no text, no logos, no watermark, no sepia filter, no cartoon. This is explicitly an artistic reconstruction, not an archival photograph. Wide 16:9 landscape composition.",
+    "kind": "AI artistic reconstruction",
+    "tool": "built-in image_gen"
+  },
+  {
+    "filename": "era-shore.webp",
+    "prompt": "Use case: historical-scene. Asset type: photorealistic cinematic wide 16:9 background for a premium historical narrative browser game, NOT UI. Scene: Early inhabited Vasilievsky Island in the Neva delta before industrial development: a quiet wide riverbank, a low wooden fishing boat pulled up on shore, fishing nets clearly visible in the foreground, a modest patch of cultivated soil on the shore, a few small timber houses and two distant ordinary people working. Cool misty northern dawn, still water, soft gold cloudlight. No factories, no palace skyline, no uninhabited wilderness. Composition: wide architectural/environmental establishing shot, richly detailed tactile materials, filmic gentle contrast, sophisticated atmosphere, clear readable foreground objects and spatial depth. Palette family: graphite #202126, ivory #F5F0E7, muted gold #B99A62, subtle burgundy #6E2438. No text, no lettering, no logo, no watermark, no illustration outlines, no cartoon. This is an artistic reconstruction or fictional visualization, not an archival photograph. Landscape 16:9.",
+    "kind": "AI artistic reconstruction",
+    "tool": "built-in image_gen"
+  },
+  {
+    "filename": "era-wine.webp",
+    "prompt": "Use case: historical-scene. Asset type: photorealistic cinematic wide 16:9 background for a premium historical narrative browser game, NOT UI. Scene: Saint Petersburg Vasilievsky Island in 1806, an early-nineteenth-century warehouse courtyard: modest aged stone and brick store buildings with wooden gates, oak wine barrels, a wooden cart, warehouse door and a small table with a ledger. Functional lived-in yard, two distant workers. Overcast northern daylight, muted warm brown and slate shadows. Not a precise reconstruction of any surviving building. Composition: wide architectural/environmental establishing shot, richly detailed tactile materials, filmic gentle contrast, sophisticated atmosphere, clear readable foreground objects and spatial depth. Palette family: graphite #202126, ivory #F5F0E7, muted gold #B99A62, subtle burgundy #6E2438. No text, no lettering, no logo, no watermark, no illustration outlines, no cartoon. This is an artistic reconstruction or fictional visualization, not an archival photograph. Landscape 16:9.",
+    "kind": "AI artistic reconstruction",
+    "tool": "built-in image_gen"
+  },
+  {
+    "filename": "era-war.webp",
+    "prompt": "Use case: historical-scene. Asset type: photorealistic cinematic wide 16:9 background for a premium historical narrative browser game, NOT UI. Scene: Saint Petersburg/Leningrad industrial workshop during 1941–1945 wartime: a quiet dim workroom, red brick wall, tall windows with blackout curtains, old wooden workbench in foreground with unmarked papers, pencil and ordinary hand tools, worn industrial machinery silhouettes, single modest work lamp. Sober respectful atmosphere with human presence suggested by a coat and chair. No people close-up, no weapons, no blood, no explosions, no celebration or propaganda. Restrained cold-blue shadows and a small warm ivory pool of light. Composition: wide architectural/environmental establishing shot, richly detailed tactile materials, filmic gentle contrast, sophisticated atmosphere, clear readable foreground objects and spatial depth. Palette family: graphite #202126, ivory #F5F0E7, muted gold #B99A62, subtle burgundy #6E2438. No text, no lettering, no logo, no watermark, no illustration outlines, no cartoon. This is an artistic reconstruction or fictional visualization, not an archival photograph. Landscape 16:9.",
+    "kind": "AI artistic reconstruction",
+    "tool": "built-in image_gen"
+  },
+  {
+    "filename": "era-soviet.webp",
+    "prompt": "Use case: historical-scene. Asset type: photorealistic cinematic wide 16:9 background for a premium historical narrative browser game, NOT UI. Scene: Late Soviet industrial workshop in Vasilievsky Island Saint Petersburg: a functioning red-brick workshop with grey-green industrial machinery, a clearly visible metal equipment mounting foot and floor anchors in foreground, a worn metal identification plate with no readable text on machine, exposed textured brickwork, a few areas adapted for different uses. Orderly lived-in working space, not abandoned or ruined. Soft northern light from tall windows, subtle dusty atmosphere, subdued charcoal, brick and muted olive colors. Composition: wide architectural/environmental establishing shot, richly detailed tactile materials, filmic gentle contrast, sophisticated atmosphere, clear readable foreground objects and spatial depth. Palette family: graphite #202126, ivory #F5F0E7, muted gold #B99A62, subtle burgundy #6E2438. No text, no lettering, no logo, no watermark, no illustration outlines, no cartoon. This is an artistic reconstruction or fictional visualization, not an archival photograph. Landscape 16:9.",
+    "kind": "AI artistic reconstruction",
+    "tool": "built-in image_gen"
+  },
+  {
+    "filename": "era-tech.webp",
+    "prompt": "Use case: photorealistic-natural. Asset type: photorealistic cinematic wide 16:9 background for a premium historical narrative browser game, NOT UI. Scene: Modern 2024 technology hub inside a sensitively renovated old Saint Petersburg red-brick industrial building: tall arched windows, original textured brickwork, glass meeting room partitions, elegant contemporary timber worktables and monitors without readable text, indoor plants and lounge furniture, a few tiny casually dressed workers. Premium authentic architectural editorial photograph, quiet daylight with warm lamp accents. Real historic fabric and modern materials in balance, no exaggerated futuristic elements. Composition: wide architectural/environmental establishing shot, richly detailed tactile materials, filmic gentle contrast, sophisticated atmosphere, clear readable foreground objects and spatial depth. Palette family: graphite #202126, ivory #F5F0E7, muted gold #B99A62, subtle burgundy #6E2438. No text, no lettering, no logo, no watermark, no illustration outlines, no cartoon. This is an artistic reconstruction or fictional visualization, not an archival photograph. Landscape 16:9.",
+    "kind": "AI artistic reconstruction",
+    "tool": "built-in image_gen"
+  },
+  {
+    "filename": "era-future.webp",
+    "prompt": "Use case: stylized-concept. Asset type: photorealistic cinematic wide 16:9 background for a premium historical narrative browser game, NOT UI. Scene: An optimistic restrained artistic vision of a 2126 technology and civic hub on the same historic Saint Petersburg industrial site: carefully preserved old red-brick arches and walls integrated with luminous transparent architectural structures, indoor trees and a planted public courtyard, subtle translucent digital archive panels without legible text, soft daylight, a few tiny people. Sustainable, humane and believable future, elegant cultural architecture, not cyberpunk, not a spaceship, no neon. Pale ivory, muted sage, warm brick and soft golden details. Composition: wide architectural/environmental establishing shot, richly detailed tactile materials, filmic gentle contrast, sophisticated atmosphere, clear readable foreground objects and spatial depth. Palette family: graphite #202126, ivory #F5F0E7, muted gold #B99A62, subtle burgundy #6E2438. No text, no lettering, no logo, no watermark, no illustration outlines, no cartoon. This is an artistic reconstruction or fictional visualization, not an archival photograph. Landscape 16:9.",
+    "kind": "AI artistic reconstruction",
+    "tool": "built-in image_gen"
+  },
+  {
+    "filename": "portrait-yakov.webp",
+    "prompt": "Use case: photorealistic-natural. Asset type: square character portrait for a premium historical narrative game. Subject: Fictional man named Yakov, around 40 years old, an ordinary fisherman living by the Neva before industrialization. Weathered natural face, short dark beard, simple rough linen shirt and wool outer layer. Calm, observant and quietly cautious, looking attentively at the viewer. No modern accessories. Photorealistic cinematic shoulders-and-head portrait, face centered and comfortably inside frame, enough headroom for circular avatar crop. Dark graphite softly blurred background, gentle warm side lighting, subtle muted gold rim light, authentic skin and cloth textures, tasteful film grain. Color family graphite #202126 ivory #F5F0E7 burgundy #6E2438 muted gold #B99A62. No text, no logo, no watermark, no cartoon, no illustration outlines. This is a fictional character, not a real historical person. Square image.",
+    "kind": "AI fictional character portrait",
+    "tool": "built-in image_gen"
+  },
+  {
+    "filename": "portrait-ivan.webp",
+    "prompt": "Use case: photorealistic-natural. Asset type: square character portrait for a premium historical narrative game. Subject: Fictional man named Ivan Petrovich, 52 years old, a modest warehouse manager in Saint Petersburg in 1806. A thoughtful lined face, neatly groomed sideburns, dark early nineteenth-century coat and simple waistcoat, linen collar. Pedantic, reserved, dignified but not aristocratic. No medals or uniform, no modern accessories. Photorealistic cinematic shoulders-and-head portrait, face centered and comfortably inside frame, enough headroom for circular avatar crop. Dark graphite softly blurred background, gentle warm side lighting, subtle muted gold rim light, authentic skin and cloth textures, tasteful film grain. Color family graphite #202126 ivory #F5F0E7 burgundy #6E2438 muted gold #B99A62. No text, no logo, no watermark, no cartoon, no illustration outlines. This is a fictional character, not a real historical person. Square image.",
+    "kind": "AI fictional character portrait",
+    "tool": "built-in image_gen"
+  },
+  {
+    "filename": "portrait-mikhail.webp",
+    "prompt": "Use case: photorealistic-natural. Asset type: square character portrait for a premium historical narrative game. Subject: Fictional man named Mikhail, 24 years old, a young Saint Petersburg industrial worker in 1869. Short dark hair, lightly weathered face with slight stubble, plain work shirt, dark waistcoat, modestly soiled hands out of frame. Curious, energetic yet sincere expression. No modern clothes, no exaggerated heroism. Photorealistic cinematic shoulders-and-head portrait, face centered and comfortably inside frame, enough headroom for circular avatar crop. Dark graphite softly blurred background, gentle warm side lighting, subtle muted gold rim light, authentic skin and cloth textures, tasteful film grain. Color family graphite #202126 ivory #F5F0E7 burgundy #6E2438 muted gold #B99A62. No text, no logo, no watermark, no cartoon, no illustration outlines. This is a fictional character, not a real historical person. Square image.",
+    "kind": "AI fictional character portrait",
+    "tool": "built-in image_gen"
+  },
+  {
+    "filename": "portrait-anna.webp",
+    "prompt": "Use case: photorealistic-natural. Asset type: square character portrait for a premium historical narrative game. Subject: Fictional woman named Anna, 29 years old, an ordinary Leningrad factory worker in the wartime years 1941–1945. Brown hair pulled back under a simple dark headscarf, a worn but tidy work jacket and plain blouse, natural face, composed tired but humane gaze. Respectful restrained portrayal, not glamorous, not distressed theatrically, no blood, no medals, no propaganda. Photorealistic cinematic shoulders-and-head portrait, face centered and comfortably inside frame, enough headroom for circular avatar crop. Dark graphite softly blurred background, gentle warm side lighting, subtle muted gold rim light, authentic skin and cloth textures, tasteful film grain. Color family graphite #202126 ivory #F5F0E7 burgundy #6E2438 muted gold #B99A62. No text, no logo, no watermark, no cartoon, no illustration outlines. This is a fictional character, not a real historical person. Square image.",
+    "kind": "AI fictional character portrait",
+    "tool": "built-in image_gen"
+  },
+  {
+    "filename": "portrait-sergey.webp",
+    "prompt": "Use case: photorealistic-natural. Asset type: square character portrait for a premium historical narrative game. Subject: Fictional man named Sergey Ivanovich, 67 years old, a retired Soviet factory worker recalling the changing industrial site. Silver hair, natural wrinkles, clean-shaven, simple slightly worn charcoal work jacket over a muted shirt. Warm, reflective, realistic expression, no exaggerated smile. No medals or insignia. Photorealistic cinematic shoulders-and-head portrait, face centered and comfortably inside frame, enough headroom for circular avatar crop. Dark graphite softly blurred background, gentle warm side lighting, subtle muted gold rim light, authentic skin and cloth textures, tasteful film grain. Color family graphite #202126 ivory #F5F0E7 burgundy #6E2438 muted gold #B99A62. No text, no logo, no watermark, no cartoon, no illustration outlines. This is a fictional character, not a real historical person. Square image.",
+    "kind": "AI fictional character portrait",
+    "tool": "built-in image_gen"
+  },
+  {
+    "filename": "portrait-alina.webp",
+    "prompt": "Use case: photorealistic-natural. Asset type: square character portrait for a premium historical narrative game. Subject: Fictional woman named Alina, 27 years old, a modern 2024 IT specialist in Saint Petersburg. Natural brown hair at shoulder length, warm intelligent composed expression, simple elegant ivory knit top under a charcoal casual jacket, no corporate branding. Contemporary editorial portrait, approachable, not fashion glamour. Photorealistic cinematic shoulders-and-head portrait, face centered and comfortably inside frame, enough headroom for circular avatar crop. Dark graphite softly blurred background, gentle warm side lighting, subtle muted gold rim light, authentic skin and cloth textures, tasteful film grain. Color family graphite #202126 ivory #F5F0E7 burgundy #6E2438 muted gold #B99A62. No text, no logo, no watermark, no cartoon, no illustration outlines. This is a fictional character, not a real historical person. Square image.",
+    "kind": "AI fictional character portrait",
+    "tool": "built-in image_gen"
+  },
+  {
+    "filename": "portrait-archivist.webp",
+    "prompt": "Use case: stylized-concept. Asset type: square character portrait for a premium historical narrative game. Subject: A fictional digital archival system visualized as an elegant and calm translucent human-like bust made from layered soft ivory-gold lines and tiny particles, no identifiable real human likeness. Restrained subtle dimensional form suggesting an attentive archivist, against a deep graphite background, no bright neon, no robotic helmet, no frightening face, no text. Future 2126, humane sophisticated cultural archive. Photorealistic cinematic shoulders-and-head portrait, face centered and comfortably inside frame, enough headroom for circular avatar crop. Dark graphite softly blurred background, gentle warm side lighting, subtle muted gold rim light, authentic skin and cloth textures, tasteful film grain. Color family graphite #202126 ivory #F5F0E7 burgundy #6E2438 muted gold #B99A62. No text, no logo, no watermark, no cartoon, no illustration outlines. This is a fictional character, not a real historical person. Square image.",
+    "kind": "AI fictional character portrait",
+    "tool": "built-in image_gen"
+  },
+  {
+    "filename": "future-science.webp",
+    "prompt": "Use case: stylized-concept. Asset type: photorealistic cinematic 16:9 environment background for the ending of a premium historical browser game, no UI. Scene: A scientific and technological research center in the year 2126 integrated into a preserved Saint Petersburg red-brick industrial complex. Old brick arches, tall windows, transparent glass laboratory partitions, refined research benches with microscopes and small experimental instruments, quiet scientists at work, subtle translucent data displays without legible text. Advanced but believable technology, warm daylight, human scale. Focus clearly on research and learning. Beautiful tactile architectural visualization, realistic materials and natural sunlight, composed wide establishing shot with foreground detail and deep perspective. Sophisticated restrained design, premium cultural museum atmosphere, graphite shadows and ivory highlights, muted gold and warm brick, selective burgundy. No text, no lettering, no logos, no watermark, no cartoon, no cyberpunk. Fictional artistic vision of 2126, not a real architectural project. Landscape 16:9.",
+    "kind": "AI fictional future visualization",
+    "tool": "built-in image_gen"
+  },
+  {
+    "filename": "future-art.webp",
+    "prompt": "Use case: stylized-concept. Asset type: photorealistic cinematic 16:9 environment background for the ending of a premium historical browser game, no UI. Scene: An arts and technology cultural center in the year 2126 in a preserved Saint Petersburg red-brick industrial courtyard. Historic brick arches surrounding an open luminous gallery, one beautiful abstract sculpture in the center, restrained large digital artworks made of soft projected light, people contemplating art, glass roof sections and elegant exhibition furniture. Focus clearly on visual art, culture and creativity. No giant advertising screens. Beautiful tactile architectural visualization, realistic materials and natural sunlight, composed wide establishing shot with foreground detail and deep perspective. Sophisticated restrained design, premium cultural museum atmosphere, graphite shadows and ivory highlights, muted gold and warm brick, selective burgundy. No text, no lettering, no logos, no watermark, no cartoon, no cyberpunk. Fictional artistic vision of 2126, not a real architectural project. Landscape 16:9.",
+    "kind": "AI fictional future visualization",
+    "tool": "built-in image_gen"
+  },
+  {
+    "filename": "future-green.webp",
+    "prompt": "Use case: stylized-concept. Asset type: photorealistic cinematic 16:9 environment background for the ending of a premium historical browser game, no UI. Scene: A green technological park in the year 2126 between preserved Saint Petersburg red-brick industrial buildings. Dense lush mature trees, ferns and wildflower garden, quiet curving accessible paths, a small rainwater pool, subtle transparent greenhouse or environmental research pavilion, benches with a few relaxed people. Technology discreet and integrated, no neon. Focus clearly on nature, ecology and a peaceful community garden. Beautiful tactile architectural visualization, realistic materials and natural sunlight, composed wide establishing shot with foreground detail and deep perspective. Sophisticated restrained design, premium cultural museum atmosphere, graphite shadows and ivory highlights, muted gold and warm brick, selective burgundy. No text, no lettering, no logos, no watermark, no cartoon, no cyberpunk. Fictional artistic vision of 2126, not a real architectural project. Landscape 16:9.",
+    "kind": "AI fictional future visualization",
+    "tool": "built-in image_gen"
+  },
+  {
+    "filename": "future-public.webp",
+    "prompt": "Use case: stylized-concept. Asset type: photorealistic cinematic 16:9 environment background for the ending of a premium historical browser game, no UI. Scene: A multifunctional public cultural space in the year 2126 in a preserved Saint Petersburg red-brick industrial courtyard. Old brick arches, open civic library with books visible behind glass, shared craft workshop tables, a small cafe, welcoming paved courtyard with movable seats and plants. People of different ages, including older people and children with adults, reading, chatting and making things. Focus clearly on public life and shared access. No commercial branding. Beautiful tactile architectural visualization, realistic materials and natural sunlight, composed wide establishing shot with foreground detail and deep perspective. Sophisticated restrained design, premium cultural museum atmosphere, graphite shadows and ivory highlights, muted gold and warm brick, selective burgundy. No text, no lettering, no logos, no watermark, no cartoon, no cyberpunk. Fictional artistic vision of 2126, not a real architectural project. Landscape 16:9.",
+    "kind": "AI fictional future visualization",
+    "tool": "built-in image_gen"
+  },
+  {
+    "filename": "character-shore.webp",
+    "prompt": "Use case: identity-preserve. Asset type: transparent visual-novel character sprite for an existing historical game. Input image is the existing fictional character Yakov, preserve this exact face, age, dark beard and moustache, rough dark wool cap, off-white linen shirt, burgundy wool shoulder cloak and rope/net detail. Extend this portrait into a natural standing HEAD-TO-KNEES view. Full crown and both knees must be visible, crop just BELOW the knees, no feet needed. Arms natural at the sides, one hand loosely holding a small coil of rope, body slightly turned toward screen-left, eyes toward viewer, calm attentive expression. Cinematic realistic painterly texture, muted warm earth palette, soft side lighting, detailed natural fabric. Tall portrait canvas 2:3, figure occupies almost full height, clean full silhouette with narrow transparent margin, no clipped elbows or head. GENUINELY TRANSPARENT alpha background, no scenery, no solid rectangle, no ground, no shadow backdrop, no text or UI. Keep this character's face recognizably the same as the reference; this is a fictional early island fisherman, not a modern costume photo.",
+    "kind": "AI fictional knee-up character",
+    "tool": "built-in image_gen",
+    "width": 1024,
+    "height": 1536,
+    "transparent_background": true,
+    "reference": "assets/portrait-yakov.webp"
+  },
+  {
+    "filename": "character-wine.webp",
+    "prompt": "Use case: identity-preserve. Asset type: transparent visual-novel character sprite for existing historical game. Input image is the existing fictional warehouse keeper Ivan Petrovich, preserve his exact middle-aged clean-shaven face, prominent sideburns, brown swept hair, dark coat, burgundy waistcoat, ivory cravat and historical 1806 clothing. Extend this portrait into a natural standing HEAD-TO-KNEES view. Full crown and both knees visible, crop just BELOW knees, no feet needed. Arms natural, hands loosely resting together at waist, body slightly turned toward screen-left, eyes toward viewer, composed questioning expression. Cinematic realistic painterly texture, warm muted charcoal/burgundy palette, soft side light. Tall portrait canvas 2:3, figure almost full height, clean full silhouette with narrow transparent margin, no clipped elbows/head. GENUINELY TRANSPARENT alpha background, no scenery, no rectangle, no ground, no shadow backdrop, no props obscuring coat, no text or UI. Preserve the reference fictional character's face and costume identity.",
+    "kind": "AI fictional knee-up character",
+    "tool": "built-in image_gen",
+    "width": 1024,
+    "height": 1536,
+    "transparent_background": true,
+    "reference": "assets/portrait-ivan.webp"
+  },
+  {
+    "filename": "era-shore-mobile.webp",
+    "prompt": "Use case: historical-scene. Asset type: tall mobile background for an object-exploration visual novel, not a poster. Recompose the reference rural island riverbank scene as a complete VERTICAL 9:19 illustration, approximately 1024x2160, to fit a phone with NO panning. Preserve the same realistic painterly style, warm cloudy sunrise, water, log cottages, birch trees, modest early village, nets and earthy materials. Three interactive objects must be CLEAR, visually separated and entirely inside the frame: (1) a hanging fishing net on a simple wooden rail, lower-left centered about x25%, y63%; (2) a complete small wooden rowboat on the river edge, middle/right lower section centered about x65%, y76%, boat hull fully visible and not touching image edge; (3) a distinct small rectangular cultivated vegetable plot with clear rows, near the cottage at x45%, y47%. Compose naturally with foreground shoreline below, river receding behind boat, cottage left above the plot; no giant people or foreground character. Top has modest sky and trees, entire scene extends to all four edges. Keep main objects within x15%-85% and y35%-85%. No panels, labels, text, icons, symbols, markers, outlines or UI. Keep all three required objects easy to click and unobscured; this is a new portrait composition of the same place.",
+    "kind": "AI portrait artistic reconstruction",
+    "tool": "built-in image_gen",
+    "width": 909,
+    "height": 1730,
+    "transparent_background": false,
+    "reference": "assets/era-shore.webp"
+  },
+  {
+    "filename": "era-wine-mobile.webp",
+    "prompt": "Use case: historical-scene. Asset type: tall mobile background for object-exploration historical visual novel. Recompose the reference 1806 wine warehouse courtyard as a complete VERTICAL 9:19 illustration, approximately 1024x2160, to fit a phone with NO panning. Preserve the realistic painterly style, overcast warm-grey light, brick and weathered plaster warehouses, cobbled courtyard, river and distant spire beyond open gates. Three interactive objects must be CLEAR, visually separated and entirely inside the frame: (1) one prominent upright wooden barrel with metal hoops, left/middle at x27%, y67%; (2) a compact wooden freight cart carrying two barrels, complete with bed and visible wheel, right/lower at x68%, y78%, fully inside frame; (3) the left wooden gate leaf opening toward the riverside, center at x48%, y48%, visible from top to bottom. Compose warehouse entrance and stacked barrels left, brick wall right, gate and distant water in middle; modest sky at top. No large foreground people; no character portrait. Keep objects within x15%-85% and y35%-85%, do not hide behind each other. The entire artwork fills all edges. No panels, captions, text, icons, circles, outlines, markers or UI. This is a portrait scene recomposition, not a crop of the landscape.",
+    "kind": "AI portrait artistic reconstruction",
+    "tool": "built-in image_gen",
+    "width": 910,
+    "height": 1727,
+    "transparent_background": false,
+    "reference": "assets/era-wine.webp"
+  },
+  {
+    "filename": "character-tech.webp",
+    "prompt": "Use case: identity-preserve. Asset: transparent visual-novel character sprite for a historical browser game. The attached image is the identity and clothing reference for the fictional adult woman Alina. Preserve her specific face, shoulder-length brown wavy bob, brown eyes, small gold hoop earrings, gentle expression, dark charcoal casual jacket, burgundy scarf, ivory cable-knit sweater and realistic cinematic illustration style. Extend this same character into a HEAD-TO-JUST-BELOW-KNEES standing portrait: include whole head and hair, torso, both arms and hands, hips, thighs and both knees; dark simple trousers. Neutral relaxed pose, body angled very subtly toward screen-left, looking warmly at the viewer. Complete silhouette with a little transparent margin, naturally proportioned anatomy, no clipping of head or elbows. Tall portrait canvas. Genuine alpha transparent background; no room, no floor, no rectangle, no solid colour, no shadow ground, no text, no watermarks. This is a reusable cutout for the right side of a game screen, not a finished scene.",
+    "kind": "AI fictional knee-up character",
+    "tool": "built-in image_gen",
+    "width": 1024,
+    "height": 1536,
+    "transparent_background": true,
+    "reference": "assets/portrait-alina.webp"
+  },
+  {
+    "filename": "character-future.webp",
+    "prompt": "Use case: identity-preserve. Asset: transparent visual-novel character sprite. Attached image is the exact identity and style reference for the fictional Archivist, a graceful feminine adult digital persona formed of fine luminous gold filaments and translucent ivory-gold mesh. Preserve this specific face, swept up short wavy hair, calm expression, intricate gold wire-like luminous skin, burgundy draped shawl with round gold starburst brooch and ivory-gold drapery. Extend her into a standing HEAD-TO-JUST-BELOW-KNEES portrait, including head, shoulders, both arms/hands, hips and garment covering both knees, body angled subtly toward screen-left and eyes toward viewer. Modest flowing ivory-gold dress or robe under burgundy shawl; neutral relaxed arms, no staff, no props. Match the reference's refined realistic cinematic rendering and warm gold glow. Complete silhouette with transparent space around hair and elbows; no cropped head/arms. True transparent alpha background, no dark rectangular backdrop, no floor, no scenery, no text or watermark. A separate knee-up sprite, not a portrait in a rectangle.",
+    "kind": "AI fictional knee-up character",
+    "tool": "built-in image_gen",
+    "width": 1024,
+    "height": 1536,
+    "transparent_background": true,
+    "reference": "assets/portrait-archivist.webp"
+  },
+  {
+    "filename": "era-tech-mobile.webp",
+    "prompt": "Use case: historical-scene. Asset: vertical mobile background for an exploration game. Recompose the attached modern coworking space inside a restored red-brick St Petersburg factory into a TALL PORTRAIT 9:19 composition, full-bleed. Preserve warm realistic cinematic light, exposed black iron beams, high arched windows, red brick texture, glass office partition, wooden communal desk, lamps, muted burgundy and cream furniture, city beyond windows. The entire scene must fit a phone screen without panning. Explicitly show THREE separated readable objects for clicking: (1) a clearly visible desktop COMPUTER MONITOR on the communal wooden table in the lower central area, centred around x55%,y68%; (2) one distinctive green POTTED PLANT in a grey ceramic pot on the same table to the left, around x25%,y63%; (3) a distinct exposed RED BRICK PIER between two arched windows on the right-middle, around x74%,y42%. Keep these three objects unobstructed, each with clear visible boundaries, and no duplicate prominent monitor or plant nearby to confuse selection. Do not add a foreground character. Small background people optional but preferably empty. Preserve the overall original space and style; no UI, labels, letters, logos, frame, or watermark. Show floor at bottom and ceiling toward top, natural architectural perspective, tall portrait framing rather than cropping a horizontal frame.",
+    "kind": "AI portrait artistic reconstruction",
+    "tool": "built-in image_gen",
+    "width": 952,
+    "height": 1652,
+    "transparent_background": false,
+    "reference": "assets/era-tech.webp"
+  },
+  {
+    "filename": "era-future-mobile.webp",
+    "prompt": "Use case: historical-scene. Asset: vertical mobile exploration-game background. Recompose attached imaginary future garden/library inside a preserved brick industrial complex into a TALL PORTRAIT 9:19 full-bleed image. Preserve warm daylight, soaring curved glass canopy, original red brick arches, golden slim structure, open library/cafe, greenery, refined stone floor and water reflections. Entire scene fits phone screen without panning. THREE separate legible interactive objects must be visible: (1) one distinct freestanding TRANSPARENT DIGITAL ARCHIVE DISPLAY panel showing faint historical sepia images, no readable text, on the left-middle around x27%,y51%; (2) a beautiful low circular INDOOR GARDEN bed of plants, flowers and stones in lower central area around x49%,y76%; (3) a PRESERVED RED-BRICK ARCH with open sky and distant city through it in the right-middle around x72%,y41%. Keep each object clear and not overlapping another target. It is a fictional 2126 scene, not an actual planned project. No large foreground people or statue; tiny distant people optional. Match reference realism, materials and peaceful warm atmosphere. No interface, no buttons, no border, no captions, no watermark. Tall portrait architecture, not a crop of a horizontal image.",
+    "kind": "AI portrait artistic reconstruction",
+    "tool": "built-in image_gen",
+    "width": 910,
+    "height": 1727,
+    "transparent_background": false,
+    "reference": "assets/era-future.webp"
+  },
+  {
+    "filename": "character-factory.webp",
+    "prompt": "Use case: identity-preserve. Asset: transparent character sprite for a historical visual novel. The supplied portrait is the exact fictional character reference. Extend this SAME young Russian factory worker Mikhail into a large standing HEAD-TO-JUST-BELOW-KNEES figure, naturally proportioned, no feet needed. Preserve his face, dark tousled curly hair, light stubble, friendly thoughtful expression, cream rough linen shirt and dark burgundy-brown waistcoat; add appropriate dark 1869 work trousers. Single person, arms relaxed naturally by sides, body subtly angled toward the viewer's left, eyes toward viewer. Same realistic cinematic painted-photographic quality, soft warm rim light. Portrait canvas, fill almost all canvas height with 4% breathing room above hair and just below knees; entire head, both arms and both knees must be inside frame. Actual transparent alpha background all around silhouette, no studio backdrop, no gray rectangle, no checkerboard painted into image, no floor, no cast-shadow panel, no lettering, no UI. Keep the identity faithful to reference.",
+    "kind": "AI fictional knee-up character",
+    "tool": "built-in image_gen",
+    "width": 1024,
+    "height": 1536,
+    "transparent_background": true,
+    "reference": "assets/portrait-mikhail.webp"
+  },
+  {
+    "filename": "character-war.webp",
+    "prompt": "Use case: identity-preserve. Asset: transparent character sprite for a historical visual novel. The supplied portrait is the exact fictional character reference. Extend this SAME young Russian woman Anna into a standing HEAD-TO-JUST-BELOW-KNEES figure, naturally proportioned, no feet needed. Preserve her face, brown wavy hair, dark burgundy headscarf, calm determined expression, beige buttoned blouse and dark worn 1940s work coat. The work coat falls to the hips over a modest dark practical skirt reaching the knees. Single person, arms relaxed naturally at her sides, body subtly angled toward the viewer's left, eyes toward viewer. Same realistic cinematic painted-photographic style, soft warm side light. Portrait canvas, figure fills nearly all height with 4% breathing room above hair and just below knees. Entire head, both arms and both knees inside frame. Actual transparent alpha background all around silhouette, no opaque studio background, no checkerboard painted into image, no floor or cast-shadow panel, no lettering, no UI. Preserve identity.",
+    "kind": "AI fictional knee-up character",
+    "tool": "built-in image_gen",
+    "width": 1024,
+    "height": 1536,
+    "transparent_background": true,
+    "reference": "assets/portrait-anna.webp"
+  },
+  {
+    "filename": "character-soviet.webp",
+    "prompt": "Use case: identity-preserve. Asset: transparent character sprite for a historical visual novel. The supplied portrait is the exact fictional character reference. Extend this SAME older Russian workshop veteran Sergey into a standing HEAD-TO-JUST-BELOW-KNEES figure, naturally proportioned, no feet needed. Preserve his lined face, grey swept-back hair, gentle experienced expression, beige shirt and worn dark charcoal Soviet work jacket; add matching dark work trousers. Single person, arms relaxed naturally by his sides, body subtly angled toward viewer's left, eyes toward viewer. Same realistic cinematic painterly-photographic style with warm soft rim light. Portrait canvas, fill almost all height with 4% air above hair and below knees. Entire head, both arms and both knees visible inside frame. Actual transparent alpha background around silhouette, no opaque rectangle, no checkerboard painted in image, no floor or ground shadow, no text, no UI. Preserve identity closely.",
+    "kind": "AI fictional knee-up character",
+    "tool": "built-in image_gen",
+    "width": 1024,
+    "height": 1536,
+    "transparent_background": true,
+    "reference": "assets/portrait-sergey.webp"
+  },
+  {
+    "filename": "era-factory-mobile.webp",
+    "prompt": "Use case: historical-scene. Recompose the supplied 1869 brick factory courtyard illustration into an elegant TALL PORTRAIT MOBILE GAME BACKGROUND, aspect ratio 9:19. Entire location must fit one vertical phone screen without scrolling. Preserve the same warm evening color, wet cobblestones, tall red brick walls, vaulted passage opening toward distant Saint Petersburg river and spire, believable worn industrial architecture. No foreground character, no interface, no text. Three important clearly visible separated clickable objects must be fully within central frame: (1) a wooden handcart with two wheels and sacks, at about x65%,y64%; (2) one large arched workshop window with many small glass panes, about x58%,y38%, fully visible; (3) a distinct wooden materials crate with a metal ring handle, about x25%,y78%, fully visible. Keep their contours clear, not behind people. Small distant workers permitted only far in background. Scene fills entire frame with natural perspective, camera pulled back enough to show cart wheels, whole crate and whole arched window. Realistic cinematic illustration, match reference detail and palette. No labels, letters or watermark. Generate vertical 9:19 composition.",
+    "kind": "AI portrait artistic reconstruction",
+    "tool": "built-in image_gen",
+    "width": 863,
+    "height": 1823,
+    "transparent_background": false,
+    "reference": "assets/era-factory.webp"
+  },
+  {
+    "filename": "era-war-mobile.webp",
+    "prompt": "Use case: historical-scene. Recompose the supplied quiet 1940s wartime workshop illustration as a TALL PORTRAIT 9:19 MOBILE GAME BACKGROUND. All scene content fits one portrait phone screen, no scrolling. Preserve worn timber workbench, old metal machine tools, red brick pillars, high black mullioned windows with snowy Saint Petersburg beyond, cool winter atmosphere and one warm pool of lamplight. No people in foreground, no UI, no readable text. Three distinct separated clickable objects must be fully inside the central view with clear silhouette: (1) the lit old articulated desk lamp including whole shade, curved stem and round base around x35%,y44%; (2) the metal cylindrical cup containing hand tools and wooden handles around x66%,y62%; (3) a large pale sheet of blank working paper with faint unreadable pencil lines on the bench around x47%,y78%. Arrange bench in portrait perspective so the three objects never overlap each other, lamp base visible, tools visible, paper entire edges visible. Keep bench mostly central and no critical object at image edges. Rich cinematic realistic historical painting-photograph quality matching reference. Fill frame, no black bars, no labels or watermark.",
+    "kind": "AI portrait artistic reconstruction",
+    "tool": "built-in image_gen",
+    "width": 864,
+    "height": 1821,
+    "transparent_background": false,
+    "reference": "assets/era-war.webp"
+  },
+  {
+    "filename": "era-soviet-mobile.webp",
+    "prompt": "Use case: historical-scene. Recompose supplied Soviet workshop illustration as TALL PORTRAIT 9:19 MOBILE GAME BACKGROUND, one entire scene visible on phone with no scrolling. Preserve red-brick industrial hall, tall arched windows, muted green worn metal lathe, warm lamps, distant glazed mezzanine, believable old working factory. No foreground people, no interface, no added text. Ensure three separate fully visible clickable details: (1) prominent bolted support mounting plate at foot of green lathe with large anchor bolts, centered around x62%,y79%, entirely above bottom edge; (2) rectangular worn silver identification plate on upper side of lathe around x64%,y54%, blank or unreadable, never letters; (3) exposed slim red-brick wall pier between two arched windows around x27%,y35%, distinct from all metal objects and fully visible. Keep at least 12% margin between critical objects and screen edges. Camera far enough back for whole support plate and both bolts, large identification plate, brick pier. Realistic detailed cinematic historical reconstruction, muted warm light, same visual world as reference. Portrait composition fills frame; no border, no watermark.",
+    "kind": "AI portrait artistic reconstruction",
+    "tool": "built-in image_gen",
+    "width": 1007,
+    "height": 1561,
+    "transparent_background": false,
+    "reference": "assets/era-soviet.webp"
+  }
+]

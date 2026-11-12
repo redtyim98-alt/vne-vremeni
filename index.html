@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#202126" />
+    <meta
+      name="description"
+      content="ВНЕ ВРЕМЕНИ. Исторический квест о семи жизнях одного места. Пройдите семь эпох, соберите память и создайте будущее."
+    />
+    <title>ВНЕ ВРЕМЕНИ · Одна точка. Семь жизней.</title>
+    <link rel="icon" type="image/svg+xml" href="assets/token.svg" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="assets/story.js" defer></script>
+    <script src="assets/sources.js" defer></script>
+    <script src="assets/scene-camera.js" defer></script>
+    <script src="assets/scene-objects.js" defer></script>
+    <script src="assets/scene-view.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#app">Перейти к игре</a>
+    <header class="site-header">
+      <button class="wordmark" data-action="home" aria-label="Вне времени — главный экран">
+        <span class="brand-symbol" aria-hidden="true">⌖</span
+        ><span>ВНЕ ВРЕМЕНИ<small>ОДНА ТОЧКА. СЕМЬ ЖИЗНЕЙ.</small></span>
+      </button>
+      <span id="scene-header-note" class="scene-header-note"></span>
+      <nav class="main-nav" aria-label="Навигация по игре">
+        <button data-action="continue" class="nav-button" data-nav="scene">Путешествие</button>
+        <button data-action="map" class="nav-button" data-nav="map">Карта эпох</button>
+      </nav>
+      <button
+        id="archive-button"
+        class="archive-access"
+        data-action="archive"
+        data-nav="archive"
+        aria-label="Мой архив. Собрано 0 из 7 артефактов. Игровых монет в сундуке: 0"
+        title="Мой архив"
+      >
+        <img
+          id="archive-chest-image"
+          src="assets/archive-chest.svg"
+          width="120"
+          height="92"
+          alt=""
+          aria-hidden="true"
+        />
+        <span id="archive-coins" aria-hidden="true"
+          ><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="12" cy="12" r="9" />
+            <circle cx="12" cy="12" r="6" />
+            <path d="m12 8 3 4-3 4-3-4 3-4Z" /></svg
+          ><span id="archive-coins-count">0</span></span
+        >
+        <span id="archive-count" aria-hidden="true">0<span>/7</span></span>
+      </button>
+      <button
+        id="sound-toggle"
+        class="icon-button"
+        data-action="sound"
+        aria-label="Включить звук"
+        aria-pressed="false"
+      ></button>
+    </header>
+    <main id="app" tabindex="-1">
+      <div class="initial-loader">
+        <span class="eyebrow">ИНТЕРАКТИВНАЯ ИСТОРИЯ МЕСТА</span>
+        <h1>Вне времени</h1>
+        <p>Открываем первую страницу…</p>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <span>Санкт-Петербург <span class="footer-dot">·</span> Уральская, 1</span
+      ><span id="save-status">Прогресс сохраняется в этом браузере</span
+      ><button class="text-button" data-action="about">
+        Об игре и источниках <span aria-hidden="true">↗</span>
+      </button>
+    </footer>
+    <div id="announcer" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+    <div id="toast" role="status" aria-live="polite"></div>
+    <dialog id="modal" aria-labelledby="modal-title"><div id="modal-content"></div></dialog>
+    <noscript
+      ><div class="noscript">
+        Для этой игры нужен JavaScript. Включите его в настройках браузера и обновите страницу.
+      </div></noscript
+    >
+  </body>
+</html>
