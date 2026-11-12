@@ -494,8 +494,16 @@
     layout = sceneLayout(width, height);
     camera = CAMERA.create(width, height, layout.width, layout.height);
     updateCamera();
-    const dialogue = $('#dialogue-panel').getBoundingClientRect();
-    const dialogueHeight = dialogue.height || Math.min(330, height * 0.41);
+    // In portrait the same compact area holds either card; the character stands
+    // above the currently visible one, including after answering the dialogue.
+    const mobilePortrait = width <= 760 && height >= width;
+    const dialogue = $(
+      mobilePortrait && mode === 'task' ? '#task-panel' : '#dialogue-panel',
+    ).getBoundingClientRect();
+    const fallbackPanelHeight = mobilePortrait
+      ? Math.min(216, Math.max(140, height * 0.24))
+      : Math.min(330, height * 0.41);
+    const dialogueHeight = dialogue.height || fallbackPanelHeight;
     root.style.setProperty('--dialogue-space', `${dialogueHeight}px`);
     const dialogueTop =
       dialogue.width && dialogue.height
@@ -540,6 +548,7 @@
       observer = new ResizeObserver(requestMeasure);
       observer.observe(world);
       observer.observe($('#dialogue-panel'));
+      observer.observe($('#task-panel'));
       const header = document.querySelector('.site-header');
       if (header) observer.observe(header);
       const title = $('.scene-location');

@@ -6336,6 +6336,10 @@ body[data-view='scene'] #archive-button #archive-count {
   }
   .immersive-scene .dialogue-sheet,
   .immersive-scene .task-sheet {
+    --task-title-size: 14px;
+    --supporting-text-size: 11px;
+    --character-reply-size: 13px;
+    --task-text-increase: 0px;
     padding: 0;
     bottom: calc(
       var(--scene-bottom-clearance, var(--dialogue-bottom)) +
@@ -6377,13 +6381,25 @@ body[data-view='scene'] #archive-button #archive-count {
   }
   .immersive-scene .sheet-controls .sheet-close.icon-button {
     position: absolute;
-    top: 8px;
-    right: 10px;
+    top: 0;
+    right: 1px;
     margin: 0;
     width: 44px;
     height: 44px;
     min-width: 44px;
     min-height: 44px;
+    border: 0;
+    background: transparent;
+  }
+  .immersive-scene .sheet-controls .sheet-close.icon-button::before {
+    content: '';
+    position: absolute;
+    inset: 6px;
+    z-index: -1;
+    border: 1px solid #d6bd9030;
+    border-radius: 50%;
+    background: #1e2025bb;
+    pointer-events: none;
   }
   .immersive-scene .sheet-body {
     flex: 1 1 auto;
@@ -6401,25 +6417,97 @@ body[data-view='scene'] #archive-button #archive-count {
     flex-shrink: 0;
   }
   .immersive-scene .scene-conversation.sheet-body {
-    gap: 12px;
-    padding: 14px 16px 18px;
+    gap: 4px;
+    padding: 8px 10px;
   }
   .immersive-scene .task-sheet .task-section.sheet-body {
     display: flex;
     flex-direction: column;
-    gap: 18px;
-    padding: 14px 16px 22px;
+    gap: 8px;
+    padding: 8px 10px 10px;
   }
   .immersive-scene .sheet-body .dialogue-identity {
-    padding-right: 48px;
+    padding-right: 36px;
     overflow-wrap: anywhere;
+  }
+  .immersive-scene .sheet-body .dialogue-identity h2,
+  .immersive-scene .sheet-body .dialogue-identity h3 {
+    font-size: var(--task-title-size);
+    line-height: 1.2;
+  }
+  .immersive-scene .sheet-body .dialogue-identity .role {
+    display: block;
+    margin-top: 2px;
+    font-size: var(--supporting-text-size);
+    line-height: 1.25;
+  }
+  .immersive-scene .dialogue-text,
+  .immersive-scene .task-dialogue-text {
+    font-size: var(--character-reply-size);
+    line-height: 1.25;
+  }
+  .immersive-scene .task-dialogue-text {
+    margin-top: 4px;
+  }
+  .immersive-scene .dialogue-choices[data-count='3'] {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 4px;
+  }
+  .immersive-scene .dialogue-choices[data-count='3'] .dialogue-choice:last-child {
+    grid-column: auto;
+  }
+  .immersive-scene .dialogue-choice {
+    min-height: 44px;
+    padding: 5px 6px;
+    gap: 4px;
+    font-size: 11.5px;
+    line-height: 1.2;
+    overflow-wrap: anywhere;
+  }
+  .immersive-scene .dialogue-choice .choice-arrow {
+    flex-basis: 10px;
+  }
+  .immersive-scene .dialogue-choice .choice-arrow svg {
+    width: 10px;
+    height: 10px;
   }
   .immersive-scene #task-dialogue[hidden] + .task-heading {
     padding-right: 48px;
   }
   .immersive-scene .sheet-body .task-dialogue {
     margin: 0;
-    padding: 0 0 16px;
+    padding: 0 0 8px;
+  }
+  .immersive-scene .task-heading {
+    gap: 4px;
+  }
+  .immersive-scene .task-heading h2 {
+    font-size: var(--task-title-size);
+    line-height: 1.25;
+  }
+  .immersive-scene .task-heading p {
+    font-size: 12px;
+    line-height: 1.35;
+  }
+  .immersive-scene .task-heading .fine-print {
+    font-size: 11px;
+  }
+  .immersive-scene #task-body .match-left,
+  .immersive-scene #task-body .match-row select,
+  .immersive-scene #task-body .row-number {
+    font-size: 12px;
+  }
+  .immersive-scene #task-body .letter-fragment p,
+  .immersive-scene #task-body .letter-preview {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  .immersive-scene #task-body .explore-scene-note {
+    margin-bottom: 8px;
+    line-height: 1.35;
+  }
+  .immersive-scene #task-body .explore-scene-button {
+    margin-bottom: 8px;
   }
   .immersive-scene .scene-actor {
     right: 8px;
@@ -6437,10 +6525,10 @@ body[data-view='scene'] #archive-button #archive-count {
   }
 }
 @media (max-width: 760px) and (orientation: portrait) {
-  .immersive-scene .dialogue-sheet {
+  .immersive-scene .dialogue-sheet,
+  .immersive-scene .task-sheet {
     max-height: min(
-      460px,
-      52dvh,
+      clamp(140px, 24dvh, 216px),
       var(
         --scene-panel-max-height,
         calc(
@@ -6449,6 +6537,20 @@ body[data-view='scene'] #archive-button #archive-count {
         )
       )
     );
+  }
+  .immersive-scene .scene-actor {
+    width: min(44vw, 360px);
+    height: min(36dvh, var(--scene-actor-available-height, 0px));
+    max-height: none;
+  }
+  .immersive-scene .scene-character-image {
+    transform: translateX(18%);
+  }
+  .immersive-scene[data-panel='task'] .scene-actor {
+    display: block;
+  }
+  .immersive-scene[data-actor-space='small'] .scene-actor {
+    display: none;
   }
 }
 
